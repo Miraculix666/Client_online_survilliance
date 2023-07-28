@@ -15,7 +15,7 @@ Der gewünschte Zielport für das Port-Knocking.
 Der Zeitabstand in Sekunden, in dem das Ziel überprüft wird. Standardwert ist 5 Sekunden.
 
 .PARAMETER TIME
-Die Gesamtzeit in Sekunden, wie lange das Ziel überprüft wird. Standardwert ist 600 Sekunden (10 Minuten).
+Die Gesamtzeit in Minuten, wie lange das Ziel überprüft wird. Standardwert ist 10 Minuten.
 
 .PARAMETER Knock
 Gibt an, ob Port-Knocking ausgeführt werden soll, unabhängig vom Erfolg des ICMP-Pings.
@@ -36,7 +36,7 @@ param (
     [string]$Target,
     [int]$Port,
     [int]$FRQ = 5,
-    [int]$TIME = 600,
+    [int]$TIME = 10,  
     [switch]$Knock,
 	$PortsToKnock = @(80, 443, 22, 3389, 445, 139, 53, 161, 389, 636, 3268, 3269, 1433, 1521, 5432, 1521, 8080, 8443)
 )
@@ -159,7 +159,7 @@ function Main {
     
 
     # Tabellenausgabe on demand und Schreiben in CSV-Datei
-    $endTime = (Get-Date).AddSeconds($TIME)
+    $endTime = (Get-Date).AddMinutes($TIME)
     while ((Get-Date) -le $endTime) {
         $pingResult = PerformICMPPing $Target
         if ($pingResult) {
