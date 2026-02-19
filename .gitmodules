@@ -1,0 +1,18 @@
+[submodule "HDDSpaceChecker"]
+	path = HDDSpaceChecker
+	url = https://github.com/Miraculix666/HDDSpaceChecker.git
+[submodule "deconz-rest-plugin"]
+	path = deconz-rest-plugin
+	url = https://github.com/Miraculix666/deconz-rest-plugin.git
+[submodule "HA-addons"]
+	path = HA-addons
+	url = https://github.com/Miraculix666/HA-addons.git
+[submodule "rdpwrap"]
+	path = rdpwrap
+	url = https://github.com/Miraculix666/rdpwrap.git
+[submodule "SAT-ebusd"]
+	path = SAT-ebusd
+	url = https://github.com/Miraculix666/SAT-ebusd.git
+[submodule "Skripts-and-tools"]
+	path = Skripts-and-tools
+	url = https://github.com/Miraculix666/Skripts-and-tools.git
