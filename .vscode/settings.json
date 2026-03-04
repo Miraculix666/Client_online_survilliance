@@ -1,0 +1,10 @@
+{
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.codeFormatting.preset": "OTBS",
+    "editor.defaultFormatter": "ms-vscode.powershell",
+    "editor.formatOnSave": true,
+    "editor.rulers": [120],
+    "files.associations": {
+        "*.ps1": "powershell"
+    }
+}
