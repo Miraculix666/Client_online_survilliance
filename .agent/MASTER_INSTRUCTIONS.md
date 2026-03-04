@@ -170,6 +170,7 @@ Every **5 agent sessions** OR on explicit request, run:
   - **Monatliche Überprüfung:** Dieser Ordner wird 1x im Monat (wie das gesamte Repo) überprüft und aufgeräumt/konsolidiert.
 
 - **Konsolidierungs-Prüfung:** Der Agent prüft bei den Bereinigungen, ob explizit eine Konsolidierung sinnvoll ist (z. B. bei verschiedenen Test-Versionen, anderen Ansätzen oder Überschneidungen mit Scripts/Configs anderer Projekten).
+  - **Historien-Wiederherstellung:** Werden beim Aufräumen verschiedene Versionen einer Datei gefunden, MUSS der Agent versuchen, den zeitlichen Verlauf bzw. die Historie wiederherzustellen und diese konform und konsistent im Git zu speichern (z. B. durch sequenzielle Commits der Versionen).
 - **Scope:** Der Prozess kann für das einzelne Repo oder für alle Repos im Workspace ausgelöst werden.
 
 ---
